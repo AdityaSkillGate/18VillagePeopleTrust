@@ -1,294 +1,840 @@
 <!doctype html>
-<html lang="en">
+<html lang="ta">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="theme-color" content="#1565C0">
-    <meta name="description" content="18 Village People Trust is a rural development trust serving 18 villages in Tenkasi District through education, healthcare, agriculture, employment guidance, and community welfare.">
-    <meta name="keywords" content="18 Village People Trust, 18 கிராம மக்கள் அறக்கட்டளை, Tenkasi NGO, rural development, education support, medical camp">
-    <meta property="og:title" content="18 Village People Trust">
-    <meta property="og:description" content="18 Villages. One Community. One Vision.">
-    <meta property="og:image" content="assets/Banner.png">
+    <title>18 கிராம மக்கள் அறக்கட்டளை | 18 Village People Trust - தென்காசி</title>
+    
+    <!-- Aggressive Cache Prevention -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <script>
+      // Immediate execution before rendering: unregister legacy service workers and clear cache storage
+      try {
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.getRegistrations().then(function(regs) {
+            for (var i = 0; i < regs.length; i++) {
+              regs[i].unregister();
+            }
+          });
+        }
+        if ('caches' in window) {
+          caches.keys().then(function(keys) {
+            for (var j = 0; j < keys.length; j++) {
+              caches.delete(keys[j]);
+            }
+          });
+        }
+      } catch (e) {}
+    </script>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="18 கிராம மக்கள் அறக்கட்டளை (18 Village People Trust) - தென்காசி மாவட்டத்தில் 18 கிராமங்களின் சமூக ஒற்றுமை, கல்வி உதவித்தொகை, இலவச TNPSC போட்டித் தேர்வு பயிற்சி, இலவச மருத்துவ முகாம்கள் மற்றும் இயற்கை வேளாண்மைக்கான பதிவு செய்யப்பட்ட ஊரக வளர்ச்சி அறக்கட்டளை.">
+    <meta name="keywords" content="18 கிராம மக்கள் அறக்கட்டளை, 18 Village People Trust, Tenkasi Trust, Pattadaikatti, Andarkulam, TNPSC Free Coaching, Tamil Nadu rural NGO, education scholarship Tenkasi, medical camp Tenkasi">
+    <meta name="author" content="18 Village People Trust">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#0f4d2a">
+    <link rel="canonical" href="https://18villagepeopletrust.org/">
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <title>18 Village People Trust</title>
-    <link rel="manifest" href="manifest.webmanifest">
-    <link rel="icon" href="assets/logo.png">
+    <meta property="og:url" content="https://18villagepeopletrust.org/">
+    <meta property="og:title" content="18 கிராம மக்கள் அறக்கட்டளை | 18 Village People Trust">
+    <meta property="og:description" content="ஒற்றுமையே எங்கள் பலம் • கல்வியே எங்கள் செல்வம் • மனிதநேய சேவையே எங்கள் அடையாளம். 18 கிராமங்களின் சமூக ஒற்றுமை மற்றும் கல்வி மேம்பாட்டு அறக்கட்டளை.">
+    <meta property="og:image" content="assets/logo.png">
+    <meta property="og:locale" content="ta_IN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:site_name" content="18 Village People Trust">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="18 கிராம மக்கள் அறக்கட்டளை | 18 Village People Trust">
+    <meta name="twitter:description" content="18 Villages. One Community. One Vision. Education, Healthcare, and Rural Upliftment.">
+    <meta name="twitter:image" content="assets/logo.png">
+
+    <!-- Favicon & PWA -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
     <link rel="apple-touch-icon" href="assets/logo.png">
-    <link rel="preload" as="image" href="assets/Banner.png">
-    <link rel="stylesheet" href="css/styles.css?v=2">
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/styles.css?v=20260927_nav_fixed">
+
+    <!-- JSON-LD Structured Data Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "NGO",
+      "name": "18 கிராம மக்கள் அறக்கட்டளை",
+      "alternateName": "18 Village People Trust",
+      "url": "https://18villagepeopletrust.org/",
+      "logo": "https://18villagepeopletrust.org/assets/logo.png",
+      "description": "A rural development and social welfare trust serving 18 villages in Tenkasi District, Tamil Nadu through education scholarships, free TNPSC coaching, healthcare camps, and sustainable farming.",
+      "foundingDate": "2016-12-19",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "1/397B Pillaiyar Kovil Street, South Pattadaikatti",
+        "addressLocality": "Sankarankovil",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "627862",
+        "addressCountry": "IN"
+      },
+      "telephone": "+917010866771",
+      "email": "18villagepeopletrust@gmail.com",
+      "areaServed": [
+        "Andarkulam", "Uchipatti", "Melakalangal", "Vellalankulam", "Uthankulam",
+        "Velayuthapuram", "Balapathirapuram", "Ramakrishnapuram", "Sarkaraikulam",
+        "Poovalingapuram", "Maruthathalpuram", "Arunachalapuram", "Amuthapuram",
+        "South Pattadaikatti", "North Pattadaikatti", "Pottipuram", "Sevalasamuthiram", "Karaikandarkulam"
+      ],
+      "sameAs": [
+        "https://www.facebook.com/share/1ELuzT2G3Y/",
+        "https://www.instagram.com/18village_people_trust",
+        "http://www.youtube.com/@18-nz8uc"
+      ]
+    }
+    </script>
   </head>
   <body>
-    <a class="skip-link" href="#main" data-i18n="a11y.skip">Skip to content</a>
+    <a class="skip-link" href="#main">உள்ளடக்கத்துக்கு செல்லவும் / Skip to Content</a>
 
+    <!-- Top Announcement Strip (Deep Forest Green) -->
+    <aside class="top-strip" aria-label="Official announcements and contacts">
+      <div class="top-strip-inner">
+        <div class="top-contacts">
+          <a href="tel:+917010866771">📞 <strong>+91 7010866771</strong></a>
+          <a href="mailto:18villagepeopletrust@gmail.com">✉️ 18villagepeopletrust@gmail.com</a>
+          <span>📍 தெற்கு பட்டாடைகட்டி, தென்காசி மாவட்டம் - 627862</span>
+        </div>
+        <div class="top-social">
+          <span>சமூக ஊடகங்கள்:</span>
+          <a href="https://www.facebook.com/share/1ELuzT2G3Y/" target="_blank" rel="noreferrer" aria-label="Facebook">FB</a>
+          <a href="https://www.instagram.com/18village_people_trust?igsi=YTExa211ank0dHVm" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a>
+          <a href="http://www.youtube.com/@18-nz8uc" target="_blank" rel="noreferrer" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Site Header -->
     <header class="site-header" id="top">
-      <nav class="nav-shell" aria-label="Primary navigation">
-        <a class="brand" href="#home" aria-label="18 Village People Trust home">
-          <img src="assets/logo.png" alt="18 Village People Trust logo" width="48" height="48">
-          <span>
-            <strong>18 Village People Trust</strong>
-            <small>18 கிராம மக்கள் அறக்கட்டளை</small>
-          </span>
+      <nav class="nav-shell" aria-label="முதன்மை வழிகாட்டல்">
+        <!-- Logo & Trust Title -->
+        <a class="brand" href="#home" aria-label="18 கிராம மக்கள் அறக்கட்டளை முகப்பு">
+          <img src="assets/logo.png" alt="18 கிராம மக்கள் அறக்கட்டளை இலச்சினை" width="46" height="46">
+          <div class="brand-titles">
+            <strong data-i18n="brand.name">18 கிராம மக்கள் அறக்கட்டளை</strong>
+            <small data-i18n="motto.banner">ஒற்றுமை • கல்வி • சேவை • முன்னேற்றம்</small>
+          </div>
         </a>
-        <button class="icon-button nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
-          <span></span><span></span><span></span>
-        </button>
+
+        <!-- Navbar Menu: Consolidated & Single Row (Guaranteed No Overflow) -->
         <div class="nav-links" id="navLinks">
-          <a href="#about" data-i18n="nav.about">About</a>
-          <a href="#villages" data-i18n="nav.villages">18 Villages</a>
-          <a href="#activities" data-i18n="nav.activities">Activities</a>
-          <a href="#gallery" data-i18n="nav.gallery">Gallery</a>
-          <a href="#join" data-i18n="nav.join">Join Us</a>
-          <a href="#donate" data-i18n="nav.donate">Donate</a>
-          <a href="#contact" data-i18n="nav.contact">Contact</a>
-          <button class="lang-toggle" type="button" data-lang-toggle>தமிழ்</button>
+          <a href="#home" class="active" data-i18n="nav.home">முகப்பு</a>
+          
+          <!-- About Dropdown -->
+          <div class="nav-dropdown" id="aboutDropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" id="aboutBtn">
+              <span data-i18n="nav.aboutTrust">அமைப்பு ▾</span>
+            </button>
+            <div class="nav-dropdown-menu" id="aboutMenu">
+              <a href="#about" data-i18n="nav.about">எங்களை பற்றி</a>
+              <a href="#villages" data-i18n="nav.villages">18 கிராமங்கள்</a>
+              <a href="#leadership" data-i18n="nav.leadership">நிர்வாகக் குழு</a>
+              <a href="#about" data-i18n="nav.history">அறக்கட்டளை வரலாறு</a>
+            </div>
+          </div>
+
+          <a href="#events" data-i18n="nav.events">நிகழ்வுகள்</a>
+          
+          <!-- Schemes Dropdown -->
+          <div class="nav-dropdown" id="schemesDropdown">
+            <button class="nav-dropdown-toggle" type="button" aria-expanded="false" id="schemesBtn">
+              <span data-i18n="nav.schemes">திட்டங்கள் ▾</span>
+            </button>
+            <div class="nav-dropdown-menu" id="schemesMenu">
+              <a href="#education" data-i18n="nav.education">கல்வி & திட்டங்கள்</a>
+              <a href="#events" data-i18n="nav.medical">மருத்துவ முகாம்கள்</a>
+              <a href="#pillars" data-i18n="nav.farming">இயற்கை வேளாண்மை</a>
+            </div>
+          </div>
+
+          <a href="#finance" data-i18n="nav.finance">வரவு-செலவு</a>
+          <a href="#join" data-i18n="nav.join">சேர்க்கை</a>
+          <a href="#contact" data-i18n="nav.contact">தொடர்பு</a>
+
+          <!-- Mobile Drawer Only Action Bar -->
+          <div class="nav-drawer-actions">
+            <a class="drawer-donate-btn" href="#donate">
+              💚 <span data-i18n="hero.cta.donate">நன்கொடை அளிக்க</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Header Right Actions: Always Visible & Never Hidden -->
+        <div class="nav-cta-wrap">
+          <a class="nav-donate-btn" href="#donate">
+            💚 <span data-i18n="hero.cta.donate">நன்கொடை</span>
+          </a>
+          <div class="lang-switcher" role="group" aria-label="Language Selector">
+            <button class="lang-btn active" id="btnLangTa" type="button" data-lang="ta" aria-pressed="true">தமிழ்</button>
+            <span class="lang-divider">|</span>
+            <button class="lang-btn" id="btnLangEn" type="button" data-lang="en" aria-pressed="false">English</button>
+          </div>
+          <button class="nav-toggle" type="button" id="navToggleBtn" aria-label="பட்டி திறக்க" aria-expanded="false">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
+          </button>
         </div>
       </nav>
     </header>
 
     <main id="main">
+      <!-- Hero Section (Forest Green Gradient Theme) -->
       <section class="hero" id="home" aria-labelledby="heroTitle">
-        <picture>
-          <img class="hero-media" src="assets/Banner1.png" alt="Community members of 18 Village People Trust" fetchpriority="high">
-        </picture>
-        <div class="hero-overlay"></div>
         <div class="hero-content">
-          <p class="eyebrow" data-i18n="hero.eyebrow">Registered rural development trust in Tenkasi District</p>
+          <div class="hero-badge" data-i18n="hero.badge">
+            தென்காசி மாவட்டம் • பதிவு செய்யப்பட்ட ஊரக வளர்ச்சி அறக்கட்டளை
+          </div>
           <h1 id="heroTitle">
-            <!-- <span>18 Village People Trust</span> -->
-            <em>18 கிராம மக்கள் அறக்கட்டளை</em>
+            18 கிராம மக்கள் அறக்கட்டளை
+            <span class="highlight">18 Village People Trust</span>
           </h1>
-          <p class="hero-copy" data-i18n="hero.copy">18 Villages. One Community. One Vision. Together for education, rural development and social empowerment.</p>
+          <div class="hero-motto-pill" data-i18n="motto.banner">
+            ஒற்றுமை • கல்வி • சேவை • முன்னேற்றம்
+          </div>
+          <p class="hero-copy" data-i18n="hero.lead">
+            சமூக ஒற்றுமை, கல்வி மேம்பாடு, அரசு வேலைவாய்ப்பு பயிற்சி, இலவச மருத்துவ சேவை மற்றும் இயற்கை வேளாண்மை மூலம் 18 கிராம மக்களின் ஒளிமயமான எதிர்காலத்தை ஒன்றிணைந்து உருவாக்குவோம்.
+          </p>
           <div class="hero-actions">
-            <a class="button primary" href="#donate" data-i18n="cta.donate">Donate Now</a>
-            <a class="button secondary" href="#volunteer" data-i18n="cta.volunteer">Become Volunteer</a>
-            <a class="button light" href="#membership" data-i18n="cta.member">Join Member</a>
+            <a class="button gold-cta" href="#donate" data-i18n="hero.cta.donate">💳 நன்கொடை அளிக்க</a>
+            <a class="button secondary" href="#join" data-i18n="hero.cta.join">✍️ உறுப்பினராக இணைய</a>
+            <a class="button whatsapp-btn" href="https://wa.me/917010866771" target="_blank" rel="noreferrer" data-i18n="hero.cta.whatsapp">
+              💬 WhatsApp-ல் பேச
+            </a>
           </div>
         </div>
       </section>
 
-      <section class="stats-strip" aria-label="Trust impact statistics">
-        <div class="stat"><strong data-counter="18">18</strong><span data-i18n="stats.villages">Villages</span></div>
-        <div class="stat"><strong data-counter="1000">1000+</strong><span data-i18n="stats.members">Members</span></div>
-        <div class="stat"><strong data-counter="500">500+</strong><span data-i18n="stats.students">Students Supported</span></div>
-        <div class="stat"><strong data-counter="200">200+</strong><span data-i18n="stats.families">Families Helped</span></div>
-        <div class="stat"><strong data-counter="100">100+</strong><span data-i18n="stats.volunteers">Volunteers</span></div>
-        <div class="stat"><strong data-counter="50">50+</strong><span data-i18n="stats.activities">Activities</span></div>
-      </section>
-
-      <section class="section mission-section" id="mission">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="mission.eyebrow">Our Work</p>
-          <h2 data-i18n="mission.title">Mission Areas</h2>
-          <p data-i18n="mission.copy">Focused support for education, health, employment, agriculture, environment, women, youth and village development.</p>
-        </div>
-        <div class="card-grid mission-grid" id="missionGrid"></div>
-      </section>
-
-      <section class="section split-section" id="about">
-        <div class="section-heading align-left">
-          <p class="eyebrow" data-i18n="about.eyebrow">About the Trust</p>
-          <h2 data-i18n="about.title">A community trust built by villages, for villages.</h2>
-          <p data-i18n="about.copy">The trust works to organize village coordinators, grow membership, maintain transparent accounts, support students and families, and improve life across the 18 villages.</p>
-        </div>
-        <div class="info-panel">
-          <dl>
-            <div><dt data-i18n="about.president">President</dt><dd>திரு. சமுத்திரக்கனி</dd></div>
-            <div><dt data-i18n="about.secretary">Secretary</dt><dd>திரு. ராதாகிருஷ்ணன்</dd></div>
-            <div><dt data-i18n="about.treasurer">Treasurer</dt><dd>திரு. மணிபாரதி</dd></div>
-            <div><dt data-i18n="about.advisor">Advisor</dt><dd>திரு. முத்துசாமி </dd></div>
-          </dl>
-        </div>
-      </section>
-
-      <section class="section timeline-section" aria-labelledby="timelineTitle">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="timeline.eyebrow">Trust Timeline</p>
-          <h2 id="timelineTitle" data-i18n="timeline.title">Important Decisions</h2>
-        </div>
-        <div class="timeline">
-          <article>
-            <time>23-04-2022</time>
-            <h3 data-i18n="timeline.t1.title">Reorganization meeting</h3>
-            <p data-i18n="timeline.t1.copy">Leadership and members discussed strengthening the trust, forming coordinators and improving community service.</p>
-          </article>
-          <article>
-            <time>23-04-2023</time>
-            <h3 data-i18n="timeline.t2.title">Membership and coordination plan</h3>
-            <p data-i18n="timeline.t2.copy">Each village planned one coordinator, ten joint coordinators, annual membership, ID cards and transparent reports.</p>
-          </article>
-          <article>
-            <time>23-04-2024</time>
-            <h3 data-i18n="timeline.t3.title">Asset and tanker review</h3>
-            <p data-i18n="timeline.t3.copy">The trust reviewed the water tanker status and discussed recovery or repayment into the trust account.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section villages-section" id="villages">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="villages.eyebrow">Our Villages</p>
-          <h2 data-i18n="villages.title">18 Villages Covered</h2>
-          <p data-i18n="villages.copy">Every village has a coordinator to identify needs, support members, and keep communication active.</p>
-        </div>
-        <div class="search-row">
-          <label class="search-box">
-            <span data-i18n="search.label">Search</span>
-            <input id="villageSearch" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder" placeholder="Search village or coordinator">
-          </label>
-        </div>
-        <div class="card-grid village-grid" id="villageGrid"></div>
-      </section>
-
-      <section class="section activities-section" id="activities">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="activities.eyebrow">Activities</p>
-          <h2 data-i18n="activities.title">Service Programs</h2>
-        </div>
-        <div class="activity-list" id="activityList"></div>
-      </section>
-
-      <section class="section gallery-section" id="gallery">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="gallery.eyebrow">Gallery</p>
-          <h2 data-i18n="gallery.title">Community Moments</h2>
-        </div>
-        <div class="gallery-masonry" aria-label="Photo gallery">
-          <figure><img src="assets/Banner.png" alt="Trust banner group photo" loading="lazy"><figcaption data-i18n="gallery.banner">Trust community gathering</figcaption></figure>
-          <figure><img src="assets/logo.png" alt="Trust logo" loading="lazy"><figcaption data-i18n="gallery.logo">Trust identity</figcaption></figure>
-          <div class="gallery-note">
-            <strong data-i18n="gallery.note.title">Gallery ready</strong>
-            <p data-i18n="gallery.note.copy">Education, medical camp, meeting, agriculture, tree plantation and village event photos can be added here from Google Drive.</p>
+      <!-- Trust Impact Stats Strip -->
+      <section class="stats-strip" aria-label="அறக்கட்டளையின் சாதனைகள்">
+        <div class="stats-container">
+          <div class="stat-box">
+            <span class="stat-number">18</span>
+            <span class="stat-label" data-i18n="stats.villages">கிராமங்கள்</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number gold">1000+</span>
+            <span class="stat-label" data-i18n="stats.members">உறுப்பினர்கள்</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number green">15+</span>
+            <span class="stat-label" data-i18n="stats.events">நிகழ்வுகள் (2023-25)</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number">500+</span>
+            <span class="stat-label" data-i18n="stats.students">கல்வி உதவி பெற்றோர்</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number green">10+</span>
+            <span class="stat-label" data-i18n="stats.camps">மருத்துவ முகாம்கள்</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-number gold">2</span>
+            <span class="stat-label" data-i18n="stats.coaching">TNPSC பயிற்சி மையங்கள்</span>
           </div>
         </div>
       </section>
 
-      <section class="section donate-section" id="donate">
-        <div class="donate-panel">
-          <div>
-            <p class="eyebrow" data-i18n="donate.eyebrow">Donation</p>
-            <h2 data-i18n="donate.title">Support Rural Development</h2>
-            <p data-i18n="donate.copy">Your contribution helps education support, medical camps, food assistance, village development and emergency help.</p>
+      <!-- Motto Strip -->
+      <aside class="motto-banner-strip">
+        <div class="motto-banner-inner">
+          <h3 data-i18n="motto.banner">ஒற்றுமை • கல்வி • சேவை • முன்னேற்றம்</h3>
+          <p data-i18n="motto.sub">"ஒற்றுமையே எங்கள் பலம்; கல்வியே எங்கள் செல்வம்; மனிதநேய சேவையே எங்கள் அடையாளம்."</p>
+        </div>
+      </aside>
+
+      <!-- 6 Mission Pillars Section -->
+      <section class="section" id="pillars">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="pillars.title">எங்கள் 6 முக்கிய சேவை தூண்கள்</span>
+            <h2 data-i18n="pillars.title">அறக்கட்டளையின் முக்கிய செயல்நோக்கங்கள்</h2>
+            <p data-i18n="pillars.sub">18 கிராம மக்களின் அடிப்படை தேவைகளை பூர்த்தி செய்யும் ஒருங்கிணைந்த வளர்ச்சி திட்டங்கள்.</p>
           </div>
-          <div class="bank-card">
-            <h3 data-i18n="donate.memberTitle">Membership / Donation Account</h3>
-            <p><strong>Name:</strong> Poomani. S</p>
-            <p><strong>Account:</strong> 394100050******</p>
-            <p><strong>Bank:</strong> Tamilnadu Mercantile Bank Ltd</p>
-            <p><strong>Branch:</strong> Veerasigamani</p>
-            <p><strong>IFSC:</strong> TMBL0000394</p>
-            <small data-i18n="donate.note">Trust bank account details can be updated after official bank approval.</small>
+          <div class="pillars-grid" id="pillarsGrid">
+            <!-- Dynamic Content populated by data.js -->
           </div>
         </div>
       </section>
 
-      <section class="section form-section" id="membership">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="membership.eyebrow">Join Our Trust</p>
-          <h2 data-i18n="membership.title">Membership Registration</h2>
-          <p data-i18n="membership.copy">Submit your details to create a membership record. The form is ready for Google Apps Script integration.</p>
-        </div>
-        <form class="smart-form" id="memberForm" data-form-type="member">
-          <div class="form-grid">
-            <label><span data-i18n="form.name">Full Name</span><input name="name" required></label>
-            <label><span data-i18n="form.guardian">Father / Guardian Name</span><input name="guardian" required></label>
-            <label><span data-i18n="form.mobile">Mobile Number</span><input name="mobile" inputmode="tel" required></label>
-            <label><span data-i18n="form.whatsapp">WhatsApp Number</span><input name="whatsapp" inputmode="tel"></label>
-            <label><span data-i18n="form.gender">Gender</span><select name="gender"><option>Male</option><option>Female</option><option>Other</option></select></label>
-            <label><span data-i18n="form.dob">Date of Birth</span><input name="dob" type="date"></label>
-            <label><span data-i18n="form.email">Email</span><input name="email" type="email"></label>
-            <label><span data-i18n="form.occupation">Occupation</span><select name="occupation" id="occupationSelect"></select></label>
-            <label><span data-i18n="form.education">Education</span><input name="education"></label>
-            <label><span data-i18n="form.village">Village</span><select name="village" id="villageSelect" required></select></label>
-            <label><span data-i18n="form.blood">Blood Group</span><select name="bloodGroup" id="bloodSelect"></select></label>
-            <label><span data-i18n="form.volunteerInterest">Volunteer Interest</span><select name="volunteerInterest"><option>Yes</option><option>No</option></select></label>
-            <label class="wide"><span data-i18n="form.address">Current Address</span><textarea name="address" rows="3"></textarea></label>
+      <!-- Trust History & About Us Section -->
+      <section class="section alt-bg" id="about">
+        <div class="section-shell">
+          <div class="section-heading align-left">
+            <span class="eyebrow" data-i18n="history.title">அறக்கட்டளையின் தொடக்கம் மற்றும் வரலாறு</span>
+            <h2 data-i18n="history.sub">19.12.2016 அன்று தொடங்கப்பட்டு சமூகப் பணிகளில் வீறுநடை</h2>
           </div>
-          <button class="button primary wide-button" type="submit" data-i18n="form.submit">Submit Membership</button>
-          <output class="form-result" id="memberResult" aria-live="polite"></output>
-        </form>
+          <div class="history-grid">
+            <article class="history-card">
+              <h3 data-i18n="history.title">18 கிராம மக்கள் அறக்கட்டளையின் வரலாறு</h3>
+              <p data-i18n="history.p1">
+                18 கிராம மக்கள் அறக்கட்டளை சமூக ஒற்றுமை, கல்வி மேம்பாடு, பொருளாதார முன்னேற்றம் மற்றும் மருத்துவ நலன் ஆகிய உயரிய நோக்கங்களுடன் 19.12.2016 அன்று தொடங்கப்பட்டது. அறக்கட்டளையின் முதல் பொதுக்கூட்டம் 12.01.2017 அன்று தேனி நகரில் சிறப்பாக நடைபெற்றது. இக்கூட்டத்தில் அறக்கட்டளையின் நிர்வாகக் குழு ஒருமனதாகத் தேர்ந்தெடுக்கப்பட்டு, அறக்கட்டளையின் செயல்பாடுகள் மற்றும் எதிர்கால திட்டங்கள் வகுக்கப்பட்டன.
+              </p>
+              <p data-i18n="history.p2">
+                அறக்கட்டளையின் விதிமுறைகள் சமூக முன்னேற்றம், இளைஞர் வேலைவாய்ப்பு, பெண்கள் முன்னேற்றம் மற்றும் கிராம மக்களின் ஒற்றுமை ஆகியவற்றை அடிப்படையாகக் கொண்டு ஓய்வுபெற்ற காவல் கண்காணிப்பாளர்கள் மற்றும் பேராசிரியர்களின் வழிகாட்டுதலில் வடிவமைக்கப்பட்டன.
+              </p>
+              <div class="office-callout" data-i18n="history.office">
+                🏢 <strong>நிரந்தர தலைமையக அலுவலகம்:</strong> ஜூன் 2023 முதல் தெற்கு பட்டாடைகட்டியில் நிரந்தர அலுவலகம் தொடங்கப்பட்டு முழுநேர அலுவலகப் பொறுப்பாளருடன் தினசரி மக்கள் சேவைகள் சிறப்பாக நடைபெற்று வருகின்றன.
+              </div>
+            </article>
+
+            <aside class="advisors-panel">
+              <h4>ஆலோசகர்களாக வழிகாட்டிய பெருமக்கள்</h4>
+              <div class="advisor-item">
+                <div class="advisor-avatar">1</div>
+                <div class="advisor-info">
+                  <strong>திரு. இரா. பண்டாரக்கண்ணு</strong>
+                  <small>துணைக் காவல் கண்காணிப்பாளர் (DSP - ஓய்வு), மேலக்கலங்கல்</small>
+                </div>
+              </div>
+              <div class="advisor-item">
+                <div class="advisor-avatar">2</div>
+                <div class="advisor-info">
+                  <strong>திரு. எம். ஜே. பா. பெருமாள்சாமி</strong>
+                  <small>துணைக் காவல் கண்காணிப்பாளர் (DSP - ஓய்வு), வெள்ளாளங்குளம்</small>
+                </div>
+              </div>
+              <div class="advisor-item">
+                <div class="advisor-avatar">3</div>
+                <div class="advisor-info">
+                  <strong>திரு. சுவாமிநாதன்</strong>
+                  <small>பேராசிரியர் (Professor), ஊத்தான்குளம்</small>
+                </div>
+              </div>
+              <div style="margin-top: 1.25rem; padding-top: 1rem; border-top: 1px dashed var(--border);">
+                <small style="color: var(--text-muted); display: block; line-height: 1.5;">
+                  <strong>கலந்து கொண்டு சிறப்பித்தவர்கள்:</strong> திரு. சமுத்திரக்கனி (பட்டாடைகட்டி), திரு. இரா. ஸ்ரீரங்கமுத்துபாண்டியன் (மேலக்கலங்கல்), திரு. பெ. இராதாகிருஷ்ணன் (இராமகிருஷ்ணாபுரம்), திரு. சீ. முருகன் (மேலக்கலங்கல்), திரு K. பாண்டியராஜன் (பொட்டிபுரம்).
+                </small>
+              </div>
+            </aside>
+          </div>
+        </div>
       </section>
 
-      <section class="section form-section compact" id="volunteer">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="volunteer.eyebrow">Volunteer</p>
-          <h2 data-i18n="volunteer.title">Become a Volunteer</h2>
-        </div>
-        <form class="smart-form" id="volunteerForm" data-form-type="volunteer">
-          <div class="form-grid">
-            <label><span data-i18n="form.name">Full Name</span><input name="name" required></label>
-            <label><span data-i18n="form.mobile">Mobile Number</span><input name="mobile" inputmode="tel" required></label>
-            <label><span data-i18n="form.village">Village</span><select name="village" id="volunteerVillageSelect"></select></label>
-            <label><span data-i18n="volunteer.availability">Availability</span><input name="availability"></label>
-            <label class="wide"><span data-i18n="volunteer.skills">Skills / Preferred Activity</span><textarea name="skills" rows="3"></textarea></label>
+      <!-- 18 Villages Directory & Coordinators -->
+      <section class="section" id="villages">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="villages.title">18 கிராமங்கள் மற்றும் கிராம ஒருங்கிணைப்பாளர்கள்</span>
+            <h2 data-i18n="villages.title">செயல்படும் 18 கிராமங்களின் பட்டியல்</h2>
+            <p data-i18n="villages.sub">ஒவ்வொரு கிராமத்திற்கும் தேவைகளை கண்டறிந்து மக்களிடம் நலத்திட்டங்களை கொண்டு சேர்க்கும் ஒருங்கிணைப்பாளர்கள்.</p>
           </div>
-          <button class="button secondary wide-button" type="submit" data-i18n="volunteer.submit">Submit Volunteer Details</button>
-          <output class="form-result" id="volunteerResult" aria-live="polite"></output>
-        </form>
+
+          <div class="village-search-bar">
+            <span class="village-search-icon">🔍</span>
+            <input type="search" class="village-search-input" id="villageSearchInput" placeholder="கிராமம் அல்லது ஒருங்கிணைப்பாளர் பெயர் தேடவும்..." aria-label="கிராமம் தேடல்">
+          </div>
+
+          <div class="villages-grid" id="villagesGrid">
+            <!-- Dynamic 18 Village Cards from data.js -->
+          </div>
+        </div>
       </section>
 
-      <!-- <section class="section app-section" id="join">
-        <div class="section-heading">
-          <p class="eyebrow" data-i18n="app.eyebrow">Web Application</p>
-          <h2 data-i18n="app.title">Admin and Member Tools</h2>
-        </div>
-        <div class="tool-grid" id="toolGrid"></div>
-      </section> -->
+      <!-- Leadership, Trustees & Coordinators Section -->
+      <section class="section alt-bg" id="leadership">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="leadership.title">நிர்வாகக் குழு மற்றும் ஆலோசகர்கள்</span>
+            <h2 data-i18n="leadership.sub">அறக்கட்டளையை நேர்மையுடனும் தொலைநோக்குடனும் வழிநடத்தும் குழு</h2>
+          </div>
 
-      <section class="section contact-section" id="contact">
-        <div class="contact-card">
-          <div>
-            <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
-            <h2 data-i18n="contact.title">Reach the Trust Office</h2>
-            <address>
-              1/397B பிள்ளையார் கோயில் தெரு,<br>
-              பட்டாடை கட்டி, நடுவக்குறிச்சி Post,<br>
-              வீரசிகாமணி Via, சங்கரன்கோவில் T.K,<br>
-              தென்காசி District.
-            </address>
+          <div class="tabs-nav" role="tablist">
+            <button class="tab-btn active" type="button" data-tab="exec" role="tab" aria-selected="true" data-i18n="leadership.exec">
+              நிர்வாகக் குழு (Executive Committee)
+            </button>
+            <button class="tab-btn" type="button" data-tab="trustees" role="tab" aria-selected="false" data-i18n="leadership.trustees">
+              அறங்காவலர் குழு (Board of Trustees)
+            </button>
+            <button class="tab-btn" type="button" data-tab="coordinators" role="tab" aria-selected="false" data-i18n="leadership.coordinators">
+              துறைசார் ஒருங்கிணைப்பாளர்கள் (Coordinators & Panels)
+            </button>
           </div>
-          <div class="contact-actions">
-            <a class="button primary" href="tel:+919003056857">Call 9003056857</a>
-            <a class="button secondary" href="https://wa.me/919003056857" target="_blank" rel="noreferrer">WhatsApp</a>
-            <a class="button light" href="mailto:18villagepeopletrust@gmail.com">Email</a>
+
+          <div class="leadership-grid" id="leadershipGrid">
+            <!-- Dynamic content loaded according to active tab -->
           </div>
         </div>
-        <iframe title="Map to 18 Village People Trust office area" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Pattadaikatti%20Tenkasi%20Tamil%20Nadu&output=embed"></iframe>
+      </section>
+
+      <!-- Events & Milestones Gallery Section (2023 - 2025) -->
+      <section class="section" id="events">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="events.title">சமூக நல நிகழ்வுகள் & சாதனைகள் (2023 – 2025)</span>
+            <h2 data-i18n="events.sub">அலுவலக திறப்பு முதல் மருத்துவ முகாம்கள், கல்வி உதவிகள் & TNPSC பயிற்சிகள்</h2>
+            <p>18 கிராம மக்களின் கல்வி, வேலைவாய்ப்பு மற்றும் மனிதநேய முன்னேற்றத்திற்காக செயல்படுத்தப்பட்ட வரலாற்று சிறப்புமிக்க திட்டங்கள்.</p>
+          </div>
+
+          <div class="events-filter-bar">
+            <button class="filter-btn active" data-filter="all" data-i18n="events.all">அனைத்தும்</button>
+            <button class="filter-btn" data-filter="education" data-i18n="events.edu">கல்வி உதவி</button>
+            <button class="filter-btn" data-filter="medical" data-i18n="events.med">மருத்துவ சேவை</button>
+            <button class="filter-btn" data-filter="training" data-i18n="events.train">போட்டித் தேர்வு பயிற்சி</button>
+            <button class="filter-btn" data-filter="celebration" data-i18n="events.comm">சமூக நிகழ்வுகள்</button>
+          </div>
+
+          <div class="events-grid" id="eventsGrid">
+            <!-- 15 Events populated by data.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Education & Schemes Section -->
+      <section class="section alt-bg" id="education">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow">கல்வி & வேலைவாய்ப்பு திட்டங்கள்</span>
+            <h2>எங்கள் கல்வி மற்றும் இளைஞர் வேலைவாய்ப்பு சேவை</h2>
+            <p>எந்த ஒரு கிராம மாணவரின் கல்வியும் பொருளாதார காரணங்களால் தடைபடக் கூடாது என்ற உறுதியான இலக்கு.</p>
+          </div>
+
+          <div class="pillars-grid">
+            <div class="pillar-card">
+              <span class="pillar-icon">🎓</span>
+              <h3>உயர்கல்வி தொடர்ச்சி உதவித் திட்டம்</h3>
+              <p>பொறியியல், கலை மற்றும் அறிவியல், பாலிடெக்னிக் பட்டப்படிப்புகளை தொடரும் 18 கிராம ஏழை மாணவர்களுக்கு ஆண்டுதோறும் கல்வி உதவித்தொகை வழங்கப்படுகிறது. செல்வி. முத்துலெட்சுமி, செல்வி. மதுமதி, செல்வி. ச. நந்தினி உள்ளிட்ட பல மாணவிகளுக்கு தொடர் உதவிகள் வழங்கப்பட்டுள்ளன.</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-icon">📚</span>
+              <h3>இலவச TNPSC போட்டித் தேர்வு பயிற்சி</h3>
+              <p>கிராமப்புற படித்த இளைஞர்கள் அரசு அலுவலர்களாக உயர்வதற்கு TNPSC Group-IV மற்றும் Group-II இலவச சிறப்பு பயிற்சி மையங்களை அறக்கட்டளை நடத்தி வருகிறது. மாதிரி தேர்வுகள், பாடப் புத்தகங்கள் மற்றும் அனுபவமிக்க பயிற்சியாளர்களின் ஆலோசனைகள் வழங்கப்படுகின்றன.</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-icon">🏫</span>
+              <h3>பள்ளிக் கல்வி கட்டண ஆதரவு திட்டம்</h3>
+              <p>பூவலிங்கபுரம் கிராமத்தைச் சேர்ந்த மாணவர் சி. சேதுபதி மற்றும் மாணவி சிவதர்ஷினி உள்ளிட்ட பள்ளி செல்லும் குழந்தைகளுக்கு கல்விக் கட்டண உதவிகள் வழங்கப்பட்டு கல்வி இடைநிற்றல் முற்றிலும் தடுக்கப்படுகிறது.</p>
+            </div>
+            <div class="pillar-card">
+              <span class="pillar-icon">💼</span>
+              <h3>Talent Hunt & வேலைவாய்ப்பு கருத்தரங்கம்</h3>
+              <p>பள்ளி, கல்லூரி மாணவர்களுக்கு ப்ளஸ் டூ முடித்தவுடன் எந்தப் படிப்பைத் தேர்வு செய்ய வேண்டும், வேலைவாய்ப்பு மற்றும் வெளிநாட்டு வாய்ப்புகளை எவ்வாறு அடைவது என்பது குறித்த பிரம்மாண்ட வழிகாட்டல் கருத்தரங்குகள் ஆண்டுதோறும் நடத்தப்படுகின்றன.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Annual Income & Expenditure Statement Section (வருடாந்திர வரவு – செலவு அறிக்கை) -->
+      <section class="section alt-bg" id="finance" aria-labelledby="financeTitle">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="nav.finance">வருடாந்திர வரவு-செலவு</span>
+            <h2 id="financeTitle" data-i18n="finance.title">வருடாந்திர வரவு – செலவு அறிக்கை</h2>
+            <p data-i18n="finance.sub">18 கிராம மக்கள் அறக்கட்டளையின் அதிகாரப்பூர்வ நிதி அறிக்கைகள், நன்கொடையாளர்கள் பட்டியல் மற்றும் திட்டச் செலவின விவரங்கள் (2023–2025).</p>
+          </div>
+
+          <!-- Financial Year Selector Tabs -->
+          <div class="finance-tabs-nav" role="tablist" aria-label="நிதியாண்டு தெரிவு">
+            <button class="finance-tab-btn active" type="button" role="tab" data-year="2023_2024" aria-selected="true" data-i18n="finance.tab2023">
+              2023–2024
+            </button>
+            <button class="finance-tab-btn" type="button" role="tab" data-year="2024_2025" aria-selected="false" data-i18n="finance.tab2024">
+              2024–2025
+            </button>
+            <button class="finance-tab-btn" type="button" role="tab" data-year="2025_2026" aria-selected="false" data-i18n="finance.tab2025">
+              2025–2026
+            </button>
+            <button class="finance-tab-btn" type="button" role="tab" data-year="threeYearAudit" aria-selected="false" data-i18n="finance.tab3yr">
+              3-ஆண்டு நிதி சுருக்கம்
+            </button>
+            <button class="finance-tab-btn" type="button" role="tab" data-year="pmtCollegeAccount" aria-selected="false" data-i18n="finance.tabCollege">
+              தேவர் கல்லூரி சிறப்பு நிதி
+            </button>
+          </div>
+
+          <!-- Financial Year Container (Populated dynamically) -->
+          <div class="finance-year-container" id="financeYearContainer">
+            <!-- Rendered by app.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Donations & Financial Transparency Section -->
+      <section class="section" id="donate">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="donate.title">நிதி & நன்கொடை விபரங்கள்</span>
+            <h2 data-i18n="donate.sub">அறக்கட்டளையின் அதிகாரப்பூர்வ வங்கி மற்றும் UPI கணக்கு விவரங்கள்</h2>
+            <p class="highlight" style="font-weight: 700; color: var(--primary);" data-i18n="donate.appeal">
+              "18 கிராம அறக்கட்டளை மக்கள் அனைவரும் தங்களால் இயன்ற சிறிய உதவி செய்து நம் அறக்கட்டளை வளர்ச்சிக்கு உதவுங்கள். உங்கள் சிறிய உதவி – பெரும் மாற்றம்!"
+            </p>
+          </div>
+
+          <div class="donation-grid">
+            <!-- Bank Transfer Details Card -->
+            <div class="bank-details-card">
+              <h3 data-i18n="donate.bank">வங்கி கணக்கு விவரங்கள் (Bank Transfer)</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">நேரடி வங்கி பரிவர்த்தனை (NEFT / RTGS / IMPS) மூலம் நன்கொடை அளிக்கலாம்:</p>
+
+              <div class="bank-field-list">
+                <div class="bank-field-item">
+                  <span class="field-label">வங்கி (Bank)</span>
+                  <div class="field-value-wrap">
+                    <span class="field-value">IDBI Bank</span>
+                  </div>
+                </div>
+                <div class="bank-field-item">
+                  <span class="field-label">கணக்கு பெயர் (Account Name)</span>
+                  <div class="field-value-wrap">
+                    <span class="field-value">18 kirama makkal arakattalai</span>
+                  </div>
+                </div>
+                <div class="bank-field-item">
+                  <span class="field-label">கணக்கு எண் (Account No)</span>
+                  <div class="field-value-wrap">
+                    <span class="field-value" id="accNumber">2090104000097936</span>
+                    <button class="copy-btn" type="button" data-copy="2090104000097936" data-i18n="donate.copy">நகலெடு</button>
+                  </div>
+                </div>
+                <div class="bank-field-item">
+                  <span class="field-label">IFSC குறியீடு (IFSC Code)</span>
+                  <div class="field-value-wrap">
+                    <span class="field-value" id="ifscCode">IBKL0002090</span>
+                    <button class="copy-btn" type="button" data-copy="IBKL0002090" data-i18n="donate.copy">நகலெடு</button>
+                  </div>
+                </div>
+                <div class="bank-field-item">
+                  <span class="field-label">UPI ID</span>
+                  <div class="field-value-wrap">
+                    <span class="field-value" id="upiId">idb251000508499@idbi</span>
+                    <button class="copy-btn" type="button" data-copy="idb251000508499@idbi" data-i18n="donate.copy">நகலெடு</button>
+                  </div>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.5rem; text-align: center;">
+                <a class="button whatsapp-btn sm" href="https://wa.me/917010866771?text=வணக்கம்,%20நான்%2018%20கிராம%20மக்கள்%20அறக்கட்டளைக்கு%20நன்கொடை%20செலுத்தியுள்ளேன்.%20ரசீது%20விவரங்களை%20பகிர்கிறேன்." target="_blank" rel="noreferrer">
+                  💬 நன்கொடை ரசீதை WhatsApp-ல் பகிர
+                </a>
+              </div>
+            </div>
+
+            <!-- UPI QR Code Card -->
+            <div class="qr-scan-card qr-center">
+              <h3 data-i18n="donate.qr">Scan & Pay (UPI QR Code)</h3>
+              <p style="color: var(--text-muted); font-size: 0.9rem;">GPay, PhonePe, Paytm, BHIM அல்லது எந்த ஒரு UPI செயலி மூலமும் ஸ்கேன் செய்து உடனடியாக நிதி அனுப்பலாம்:</p>
+
+              <div class="qr-image-wrap">
+                <img src="assets/qr-donation.png" alt="18 கிராம மக்கள் அறக்கட்டளை UPI QR Code" loading="lazy">
+              </div>
+
+              <div class="upi-badge">
+                UPI ID: idb251000508499@idbi
+              </div>
+              <small style="color: var(--text-light); margin-top: 0.5rem; display: block;">
+                (IDBI Bank அங்கீகரிக்கப்பட்ட அதிகாரப்பூர்வ QR Code)
+              </small>
+            </div>
+          </div>
+
+          <!-- 3-Year Audited Financial Statement -->
+          <div class="audit-card">
+            <h3 data-i18n="donate.auditTitle">3 ஆண்டுகளின் நிதி அறிக்கை சுருக்கம் (Financial Transparency)</h3>
+            <p style="color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1rem;">
+              அறக்கட்டளையின் அனைத்து வரவு-செலவுகளும் நிர்வாகக் குழுவின் ஒப்புதலுடன், சமூக நலன், கல்வி, மருத்துவம் மற்றும் மாணவர் பணிகளுக்காக 100% வெளிப்படைத்தன்மையுடன் பயன்படுத்தப்பட்டு தணிக்கை செய்யப்பட்டுள்ளது:
+            </p>
+            <div class="audit-table-wrap">
+              <table class="audit-table">
+                <thead>
+                  <tr>
+                    <th>ஆண்டு (Year)</th>
+                    <th>வரவு (Income)</th>
+                    <th>செலவு (Expense)</th>
+                    <th>இருப்பு (Balance)</th>
+                    <th>முக்கிய பணிகள் & செயல்பாடுகள்</th>
+                  </tr>
+                </thead>
+                <tbody id="auditTableBody">
+                  <!-- Populated dynamically -->
+                </tbody>
+              </table>
+            </div>
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--text-light); font-style: italic;">
+              * 10.05.2026 நிலவரப்படி கையிருப்பு தொகை: ₹220. ஆண்டு பொதுக்குழு கூட்டத்தில் சமர்ப்பிக்கப்பட்ட அதிகாரப்பூர்வ நிதி அறிக்கை.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Membership Registration Form (Redirects to WhatsApp) -->
+      <section class="section alt-bg" id="join">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="form.joinTitle">உறுப்பினர் சேர்க்கை & பதிவு</span>
+            <h2 data-i18n="form.joinTitle">அறக்கட்டளையில் புதிய உறுப்பினராக இணையுங்கள்</h2>
+            <p data-i18n="form.joinSub">படிவத்தை பூர்த்தி செய்து சமர்ப்பித்தவுடன் நேரடியாக WhatsApp வழியாக தலைமை அலுவலகத்திற்கு செல்லும்.</p>
+          </div>
+
+          <div class="form-card">
+            <form id="membershipForm" autocomplete="on">
+              <div class="whatsapp-notice">
+                ℹ️ <strong>நேரடி WhatsApp இணைப்பு:</strong> இந்தப் படிவத்தை சமர்ப்பித்ததும், நீங்கள் உள்ளிட்ட அனைத்து விபரங்களும் முறைப்படுத்தப்பட்டு, உடனடியாக தலைமை அலுவலக WhatsApp எண்ணிற்கு (+91 7010866771 - திரு. A. ரமேஷ்) அனுப்பப்படும்.
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label for="mName" data-i18n="form.name">முழு பெயர் (Full Name) *</label>
+                  <input type="text" id="mName" name="name" required placeholder="உங்கள் பெயர்">
+                </div>
+
+                <div class="form-group">
+                  <label for="mGuardian" data-i18n="form.guardian">தந்தை / கணவர் பெயர் *</label>
+                  <input type="text" id="mGuardian" name="guardian" required placeholder="தந்தை அல்லது பாதுகாவலர் பெயர்">
+                </div>
+
+                <div class="form-group">
+                  <label for="mVillage" data-i18n="form.village">சொந்த கிராமம் (Village) *</label>
+                  <select id="mVillage" name="village" required>
+                    <!-- Populated dynamically -->
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="mMobile" data-i18n="form.mobile">அலைபேசி எண் (Mobile) *</label>
+                  <input type="tel" id="mMobile" name="mobile" required placeholder="+91 XXXXX XXXXX">
+                </div>
+
+                <div class="form-group">
+                  <label for="mWhatsapp" data-i18n="form.whatsapp">WhatsApp எண் *</label>
+                  <input type="tel" id="mWhatsapp" name="whatsapp" required placeholder="+91 XXXXX XXXXX">
+                </div>
+
+                <div class="form-group">
+                  <label for="mEdu" data-i18n="form.education">கல்வித் தகுதி (Education)</label>
+                  <input type="text" id="mEdu" name="education" placeholder="எ.கா: B.E., M.Sc., 12th">
+                </div>
+
+                <div class="form-group">
+                  <label for="mOcc" data-i18n="form.occupation">தொழில் (Occupation)</label>
+                  <input type="text" id="mOcc" name="occupation" placeholder="எ.கா: விவசாயி, ஆசிரியர், தனியார் பணி">
+                </div>
+
+                <div class="form-group">
+                  <label for="mBlood" data-i18n="form.blood">இரத்த வகை (Blood Group)</label>
+                  <select id="mBlood" name="bloodGroup">
+                    <option value="">தேர்வு செய்யவும் (Select)</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                  </select>
+                </div>
+
+                <div class="form-group full-width">
+                  <label for="mAddress" data-i18n="form.address">தற்போதைய முகவரி (Residential Address)</label>
+                  <textarea id="mAddress" name="address" rows="3" placeholder="வீட்டு எண், தெரு பெயர், ஊர், அஞ்சல் குறியீடு"></textarea>
+                </div>
+              </div>
+
+              <div style="margin-top: 1.75rem;">
+                <button class="button whatsapp-btn wide-button" type="submit" data-i18n="form.submit">
+                  💬 WhatsApp வழியாக விண்ணப்பிக்க
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Hub Section -->
+      <section class="section" id="contact">
+        <div class="section-shell">
+          <div class="section-heading">
+            <span class="eyebrow" data-i18n="contact.title">தலைமை அலுவலகத்தை தொடர்பு கொள்ளவும்</span>
+            <h2 data-i18n="contact.title">நேரடி தொடர்பு மற்றும் முகவரி</h2>
+            <p data-i18n="contact.sub">எந்த ஒரு கேள்வி அல்லது உதவிக்கும் எங்கள் அலுவலக பொறுப்பாளரை நேரடியாக தொடர்பு கொள்ளலாம்.</p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-info-panel">
+              <!-- Office In-charge Card -->
+              <div class="contact-person-card">
+                <img class="contact-person-photo" src="assets/contact-card.png" alt="Mr. A. Ramesh, Office In-charge" width="90" height="90">
+                <div class="contact-person-body">
+                  <span class="village-badge">அலுவலக பொறுப்பாளர்</span>
+                  <h3 data-i18n="contact.name">திரு. A. ரமேஷ், M.Sc., B.Ed. (Maths)</h3>
+                  <p class="role" data-i18n="contact.office">தலைமைய அலுவலகம் – தெற்கு பட்டாடைக்கட்டி</p>
+                  <div class="contact-card-actions">
+                    <a class="button sm green-solid" href="tel:+917010866771">📞 அழைக்க</a>
+                    <a class="button sm whatsapp-btn" href="https://wa.me/917010866771" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+                    <a class="button sm outline-green" href="mailto:18villagepeopletrust@gmail.com">✉️ மின்னஞ்சல்</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Address Card -->
+              <div class="contact-address-card">
+                <h4>அலுவலக முகவரி (Office Address)</h4>
+                <address id="officeAddressText">
+                  1/397B பிள்ளையார் கோயில் தெரு,<br>
+                  தெற்கு பட்டாடைகட்டி, நடுவக்குறிச்சி Post,<br>
+                  வீரசிகாமணி Via, சங்கரன்கோவில் T.K,<br>
+                  தென்காசி District - 627862.
+                </address>
+              </div>
+
+              <!-- Social Channels Grid -->
+              <div class="social-channels-grid">
+                <a class="social-channel-card fb" href="https://www.facebook.com/share/1ELuzT2G3Y/" target="_blank" rel="noreferrer">
+                  <span class="social-icon-lg">📘</span>
+                  <strong>Facebook</strong>
+                  <small style="color: var(--text-muted); font-size: 0.75rem;">18 கிராம மக்கள் அறக்கட்டளை</small>
+                </a>
+                <a class="social-channel-card ig" href="https://www.instagram.com/18village_people_trust?igsi=YTExa211ank0dHVm" target="_blank" rel="noreferrer">
+                  <span class="social-icon-lg">📸</span>
+                  <strong>Instagram</strong>
+                  <small style="color: var(--text-muted); font-size: 0.75rem;">@18village_people_trust</small>
+                </a>
+                <a class="social-channel-card yt" href="http://www.youtube.com/@18-nz8uc" target="_blank" rel="noreferrer">
+                  <span class="social-icon-lg">▶️</span>
+                  <strong>YouTube</strong>
+                  <small style="color: var(--text-muted); font-size: 0.75rem;">@18-nz8uc</small>
+                </a>
+              </div>
+            </div>
+
+            <!-- Google Map -->
+            <div class="map-wrap">
+              <iframe title="18 Village People Trust Head Office Location" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Pattadaikatti%20Tenkasi%20Tamil%20Nadu&output=embed"></iframe>
+            </div>
+          </div>
+        </div>
       </section>
     </main>
 
+    <!-- Footer -->
     <footer class="site-footer">
-      <img src="assets/logo.png" alt="" width="56" height="56">
-      <p><strong>18 Village People Trust</strong><br><span data-i18n="footer.tagline">Together We Build Strong Villages.</span></p>
-      <small>© 2026 18 Village People Trust. Developed and maintained by Aditya Skill Gate IT Solution.</small>
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="display: flex; align-items: center; gap: 0.85rem; margin-bottom: 0.85rem;">
+            <img src="assets/logo.png" alt="18 கிராம மக்கள் அறக்கட்டளை" width="56" height="56">
+            <h4 style="margin: 0;" data-i18n="brand.name">18 கிராம மக்கள் அறக்கட்டளை</h4>
+          </div>
+          <p data-i18n="footer.tagline">
+            ஒற்றுமையே எங்கள் பலம் • கல்வியே எங்கள் செல்வம் • மனிதநேய சேவையே எங்கள் அடையாளம்.
+          </p>
+          <div style="font-size: 0.88rem; color: #e2f0e8;">
+            📞 <strong>அலுவலகம்:</strong> +91 7010866771<br>
+            ✉️ <strong>மின்னஞ்சல்:</strong> 18villagepeopletrust@gmail.com
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h5>முக்கிய இணைப்புகள்</h5>
+          <ul>
+            <li><a href="#home">முகப்பு (Home)</a></li>
+            <li><a href="#about">வரலாறு (Trust History)</a></li>
+            <li><a href="#villages">18 கிராமங்கள் (18 Villages)</a></li>
+            <li><a href="#leadership">நிர்வாகக் குழு (Leadership)</a></li>
+            <li><a href="#events">நிகழ்வுகள் (Events & Impact)</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h5>சேவைகள் & நிதி</h5>
+          <ul>
+            <li><a href="#education">கல்வி உதவித்தொகை (Scholarships)</a></li>
+            <li><a href="#education">இலவச TNPSC பயிற்சி (TNPSC Coaching)</a></li>
+            <li><a href="#donate">நன்கொடை & வங்கி (Donations)</a></li>
+            <li><a href="#join">உறுப்பினர் சேர்க்கை (Membership)</a></li>
+            <li><a href="#contact">தொடர்பு கொள்ள (Contact Us)</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p data-i18n="footer.copyright">
+          © 2026 18 கிராம மக்கள் அறக்கட்டளை (18 Village People Trust). அனைத்து உரிமைகளும் பாதுகாக்கப்பட்டவை.
+        </p>
+        <small style="color: #9cb8a9;">
+          வடிவமைப்பு & தொழில்நுட்ப ஆதரவு: Aditya Skill Gate IT Solutions & Poornam Info Vision.
+        </small>
+      </div>
     </footer>
 
-    <nav class="bottom-nav" aria-label="Mobile quick navigation">
-      <a href="#home" data-i18n="bottom.home">Home</a>
-      <a href="#villages" data-i18n="bottom.villages">Villages</a>
-      <a href="#membership" data-i18n="bottom.join">Join</a>
-      <a href="#contact" data-i18n="bottom.call">Contact</a>
+    <!-- Mobile Quick Navigation -->
+    <nav class="bottom-nav" aria-label="மொபைல் வழிகாட்டல்">
+      <a href="#home" class="active"><span>🏠</span><span data-i18n="nav.home">முகப்பு</span></a>
+      <a href="#villages"><span>🏘️</span><span data-i18n="nav.villages">கிராமங்கள்</span></a>
+      <a href="#events"><span>📅</span><span data-i18n="nav.events">நிகழ்வுகள்</span></a>
+      <a href="#donate"><span>💳</span><span data-i18n="nav.donate">நன்கொடை</span></a>
+      <a href="#join"><span>✍️</span><span data-i18n="nav.join">சேர்க்கை</span></a>
     </nav>
 
-    <a class="float-whatsapp" href="https://wa.me/919003056857" target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">WA</a>
-    <button class="scroll-top" type="button" aria-label="Scroll to top">↑</button>
+    <!-- Floating WhatsApp Widget -->
+    <a class="float-whatsapp" href="https://wa.me/917010866771" target="_blank" rel="noreferrer" aria-label="WhatsApp-ல் பேச">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.203c.043.072.043.419-.101.824z"/>
+      </svg>
+    </a>
 
-    <section class="chatbot" aria-label="Village Assistant">
-      <button class="chat-toggle" type="button">Village Assistant</button>
-      <div class="chat-panel" hidden="true">
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTopBtn" type="button" aria-label="மேலே செல்ல">↑</button>
+
+    <!-- Chatbot Assistant Widget (Rule 2: 20 Q&A default) -->
+    <div class="chatbot-wrap" id="chatbotWrap">
+      <button class="chat-toggle" id="chatToggleBtn" type="button">
+        💬 <span data-i18n="chat.title">கிராம உதவியாளர் (Assistant)</span>
+      </button>
+
+      <div class="chat-panel" id="chatPanel" hidden>
         <div class="chat-head">
-          <strong>Village Assistant</strong>
-          <button type="button" class="chat-close" aria-label="Close chatbot">×</button>
+          <div class="chat-head-titles">
+            <strong data-i18n="chat.title">கிராம உதவியாளர் (Trust Chatbot)</strong>
+            <small>20+ அதிகாரப்பூர்வ பதில்கள் & வழிகாட்டல்</small>
+          </div>
+          <button class="chat-close" id="chatCloseBtn" type="button" aria-label="மூட">×</button>
         </div>
-        <div class="chat-log" id="chatLog" aria-live="polite"></div>
-        <div class="quick-questions" id="quickQuestions"></div>
+
+        <div class="chat-log" id="chatLog" aria-live="polite">
+          <!-- Chat messages render here -->
+        </div>
+
+        <div class="chat-quick-section">
+          <span class="chat-quick-label" data-i18n="chat.quick">அடிக்கடி கேட்கப்படும் கேள்விகள் (20 Q&A):</span>
+          <div class="chat-quick-chips" id="quickChips">
+            <!-- 20 Quick Chips rendered from data.js -->
+          </div>
+        </div>
+
         <form class="chat-form" id="chatForm">
-          <input id="chatInput" data-i18n-placeholder="chat.placeholder" placeholder="Ask about membership, donation, office..." autocomplete="off">
-          <button type="submit" aria-label="Send">➤</button>
+          <input type="text" class="chat-input" id="chatInput" placeholder="உங்கள் கேள்வியை தட்டச்சு செய்யவும்..." autocomplete="off">
+          <button class="chat-send-btn" type="submit" aria-label="அனுப்பு">➤</button>
         </form>
       </div>
-    </section>
+    </div>
 
-    <script src="js/data.js?v=2"></script>
-    <script src="js/app.js?v=2"></script>
+    <!-- Photo Lightbox Modal (Full image pop-up) -->
+    <div class="photo-lightbox" id="photoLightbox" hidden role="dialog" aria-modal="true" aria-label="புகைப்பட பெரிதாக்கம்">
+      <div class="lightbox-overlay" id="lightboxOverlay"></div>
+      <div class="lightbox-content">
+        <button class="lightbox-close" id="lightboxCloseBtn" type="button" aria-label="மூடுக">×</button>
+        <div class="lightbox-img-wrap">
+          <img id="lightboxImg" src="" alt="Full view">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+      </div>
+    </div>
+
+    <!-- Toast Notification Container -->
+    <div class="toast-msg" id="toastMsg" role="alert"></div>
+
+    <!-- Scripts -->
+    <script src="js/data.js?v=20260927_nav_fixed"></script>
+    <script src="js/app.js?v=20260927_nav_fixed"></script>
   </body>
 </html>

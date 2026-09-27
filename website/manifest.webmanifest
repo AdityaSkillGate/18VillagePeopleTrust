@@ -1,0 +1,16 @@
+{
+  "name": "18 கிராம மக்கள் அறக்கட்டளை",
+  "short_name": "18 Village Trust",
+  "description": "18 கிராம மக்கள் அறக்கட்டளை - தென்காசி மாவட்டம் ஊரக வளர்ச்சி மற்றும் கல்வி அறக்கட்டளை",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#edf7f1",
+  "theme_color": "#0f4d2a",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
